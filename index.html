@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .uu{
+            background-color: rgb(40, 49, 46);
+            height: 58px;
+            
+        }
+        .uu img{
+            margin-top: 18px;
+            margin-left: 20px;
+            
+        }
+        .uu a{
+          float: right;
+          text-decoration: none;
+          border: 1px solid black;
+          width:81px ;
+          font-size: 19px;
+          color: whitesmoke;
+          
+          margin-top: 15px;
+          margin-right:10px ;
+          background-color: green;
+          border-radius: 4px;
+          height: 30px;
+        }
+        .gg a{
+            text-decoration: none;
+            float: right;
+            padding: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .gg img{
+            padding: 20px;
+        }
+        .gg :hover{
+            color: red;
+        }
+        .container {
+  position: relative;
+  width: 100%;
+  
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:rgba(0,0,0,0.5);
+  color: white;
+  font-size: 26px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+.container a{
+    position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color:rgba(0,0,0,0.5); */
+  background-color: transparent;
+
+  color: white;
+  font-size: 26px;
+  /* padding: 12px 24px; */
+  /* border: none; */
+  cursor: pointer;
+  /* border-radius: 5px; */
+  text-align: center;
+  text-decoration: none;
+}
+/* *Vertical Flip*/ 
+#verticalFlip{
+	display: inline;
+	text-indent: 8px;
+}
+#verticalFlip span{
+	animation: vertical 2.5s linear infinite 0s;
+	-ms-animation: vertical 3.5s linear infinite 0s;
+	-webkit-animation: vertical 1.5s linear infinite 0s;
+	color:whitesmoke;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+#verticalFlip span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+/* #verticalFlip span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+#verticalFlip span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+#verticalFlip span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+} */
+
+/*Vertical Flip Animation*/
+@-moz-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotateX(180deg); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0;}
+}
+@-webkit-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: rotateX(180deg); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotateX(180deg); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+.container #verticalFlip{
+    position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color:rgba(0,0,0,0.5); */
+  background-color: transparent;
+
+  color: white;
+  font-size: 70px;
+  /* padding: 12px 24px; */
+  /* border: none; */
+  cursor: pointer;
+  /* border-radius: 5px; */
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="uu">
+        <img src="envato.png" width="160px" >
+        
+       <a href="https://www.14thstreetpizza.com/orderonline/pizza" >Buy Now </a>
+    
+    
+    </div>
+    <div class="gg">
+        <img src="logou.png" >
+        <a href="https://themeforest.net/">Home</a>
+        <a href="https://themeforest.net/">About</a>
+        <a href="https://themeforest.net/">Services</a>
+        <a href="https://themeforest.net/">Folio</a>
+        <a href="https://themeforest.net/">Team</a>
+        <a href="https://themeforest.net/">Features</a>
+        <a href="https://themeforest.net/">Blogs</a>
+
+    </div>
+    <div class="container">
+    <img src="project6.jpg" >
+    <button class="btn success">Learn More</button>
+    <a href="https://themeforest.net/">BuyNow</a>
+    <div id="verticalFlip">
+        <span>Creative Solution.</span>
+        <span>Creative Ideas.</span>
+        <!-- <span>Horrible.</span>
+        <span>Magnificent.</span>
+        <span>Adorable.</span> -->
+      </div> 
+  
+</div>
+</nav>
+</body>
+</html>
